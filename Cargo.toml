@@ -1,0 +1,12 @@
+[package]
+name = "rust-wallet"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tezos-core = { git = "https://github.com/airgap-it/tezos-rust-sdk", features = ["full_crypto"] }
+bs58 = { version = "0.4", features = ["check"] }
+ed25519-dalek = { version = "2.0.0", features = ["rand_core"] }
+rand = "0.8.5"
